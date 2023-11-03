@@ -1,0 +1,62 @@
+<html>
+<head>
+  <title>The Game of Stones</title>
+  <link rel="stylesheet" href=https://fonts.googleapis.com/css?family=Montserrat'>
+  <style>
+    * {
+        font-family: Montserrat, sans-serif;
+    }
+    h1 {
+      padding-bottom: 1em; padding-top: 1em; font-weight: 800;
+    }
+    h2 {
+      padding-bottom: 1em; font-weight: 800;
+    }
+    button {
+        padding : 0.75em;
+        color : white;
+        background-color: rgb(94, 40, 221);
+        border : none;
+        border-radius: 15px;
+        font-weight: 600;
+    }
+    button:hover {
+      background-color: rgb(25, 14, 143);
+    }
+    button:disabled {
+      background-color: rgb(187, 181, 254);
+      border-color: rgb(219, 216, 252);
+    }
+  </style>
+</head>
+
+<body style="margin: auto; width: 50%; padding: 3em;">
+  <h1>The Game of Stones</h1>
+  <h2>Here are the rules...</h2>
+  <p>You are going to play against a computer<br><br>
+    <ul>
+      <li>
+        There will be a board with a certain NUMBER OF STONES (you can choose this number)
+      </li>
+      <li>
+        You will be able to CHOOSE if you want to start or to let the computer start
+      </li>
+      <li>
+        At each turn you will be able to REMOVE 1, 2 or 3 stones from the board
+      </li>
+      <li>
+        The player who remove the LAST stone wins the game
+      </li> 
+    </ul>
+  </p>
+  <p style="margin-bottom: 2em; margin-top: 2em;"><em>Good luck !</em></p>
+  <button id="playButton" type="button">Play the game</button>
+
+  <script>
+    document.getElementById("playButton").addEventListener('click', function() {
+      window.location.href = `selection.html?`;
+    });
+  </script>
+</body>
+
+</html>
